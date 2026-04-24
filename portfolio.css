@@ -1,0 +1,125 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #0f172a;
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+  text-shadow: 0 0 8px #38bdf8;
+}
+
+/* HERO */
+.hero {
+  padding: 70px 20px; /* slightly more space */
+  text-align: center;
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+}
+
+/* Profile Image Glow */
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(56,189,248,0.7);
+}
+
+/* Hero Text Glow */
+.hero h1 {
+  font-size: 28px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+.hero span {
+  color: #00e0ff;
+  text-shadow: 0 0 12px #00e0ff;
+}
+
+/* Sections */
+.section {
+  padding: 55px 20px; /* balanced spacing */
+  text-align: center;
+}
+
+/* Section Colors */
+#about {
+  background: #0f172a;
+}
+
+#education {
+  background: #1e293b;
+}
+
+#projects {
+  background: #334155;
+}
+
+/* Project Cards with Glow */
+.project {
+  background: rgba(255,255,255,0.08);
+  padding: 18px;
+  margin: 15px auto;
+  max-width: 520px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(56,189,248,0.7);
+}
+
+/* Footer */
+footer {
+  background: #020617;
+  padding: 12px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Scroll animation */
+.hidden {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: 0.6s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
